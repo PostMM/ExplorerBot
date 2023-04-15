@@ -12,7 +12,7 @@ public class ExplorerBot {
     public static final String VERSION = "V1.0";
     public static final String NAME = "ExplorerBot";
     public static final String RES = "";
-    public static final String VIEWER_PATH = "";
+    public static final String VIEWER_PATH = "C:\\";
 
     public static final String CMD_USER_ID = "";
     private static Quo window;

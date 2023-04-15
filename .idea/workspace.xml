@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="692bd5ec-d939-4008-9e07-bdbbd2e0fb4a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BotEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BotEventHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CommandManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ExplorerBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExplorerBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Quo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Quo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FileViewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileViewer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +109,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681554043022</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added File Viewer">
+      <created>1681593107427</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681593107427</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added File Viewer">
+      <created>1681593158824</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681593158824</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -118,6 +131,7 @@
     <MESSAGE value="Project Setup" />
     <MESSAGE value="Base Functionality&#10;&#10;Adds fundamental capabilities for JDA webhook connection" />
     <MESSAGE value="Dev phase 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dev phase 1" />
+    <MESSAGE value="Added File Viewer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added File Viewer" />
   </component>
 </project>
