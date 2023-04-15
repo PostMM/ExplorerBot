@@ -1,4 +1,5 @@
 import net.dv8tion.jda.api.entities.User;
+import net.dv8tion.jda.api.entities.channel.ChannelType;
 import net.dv8tion.jda.api.events.guild.GuildJoinEvent;
 import net.dv8tion.jda.api.events.guild.GuildReadyEvent;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
@@ -43,7 +44,12 @@ public class BotEventHandler extends ListenerAdapter {
      */
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
-        // TODO
+
+        if (event.isFromType(ChannelType.PRIVATE) && event.getAuthor().getId().equals(ExplorerBot.CMD_USER_ID)) {
+
+            manager.handleRequest(event.getMessage(), event.getChannel().asPrivateChannel());
+
+        }
     }
 
     /**
