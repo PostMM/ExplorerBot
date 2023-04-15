@@ -12,8 +12,9 @@ public class ExplorerBot {
     public static final String VERSION = "V1.0";
     public static final String NAME = "ExplorerBot";
     public static final String RES = "";
+    public static final String VIEWER_PATH = "C:\\";
 
-    public static final String CMD_CHANNEL = "";
+    public static final String CMD_USER_ID = "";
     private static Quo window;
 
     public static void main(String[] args) {
@@ -41,7 +42,8 @@ public class ExplorerBot {
                 .enableIntents(GatewayIntent.MESSAGE_CONTENT)
                 .build();
 
-        CommandManager manager = new CommandManager(bot);
+        FileViewer explorer = new FileViewer(VIEWER_PATH);
+        CommandManager manager = new CommandManager(bot, explorer);
         bot.addEventListener(new BotEventHandler(manager));
     }
 

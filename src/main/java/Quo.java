@@ -58,7 +58,7 @@ public class Quo extends JFrame {
         vert.setUnitIncrement(16);
         
         JLabel lblNewLabel = new JLabel("Explore ");
-        lblNewLabel.setFont(new Font("TimesRoman", Font.BOLD | Font.ITALIC, 30));
+        lblNewLabel.setFont(new Font("TimesRoman", Font.BOLD, 30));
         //lblNewLabel.setForeground(new Color(255, 102, 51));
         lblNewLabel.setForeground(Color.WHITE);
         panel.add(lblNewLabel, "cell 0 0");

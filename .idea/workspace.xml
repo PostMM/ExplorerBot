@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="692bd5ec-d939-4008-9e07-bdbbd2e0fb4a" name="Changes" comment="Base Functionality&#10;&#10;Adds fundamental capabilities for JDA webhook connection">
-      <change afterPath="$PROJECT_DIR$/src/main/java/BotEventHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CommandManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ExplorerBot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Quo.java" afterDir="false" />
+    <list default="true" id="692bd5ec-d939-4008-9e07-bdbbd2e0fb4a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CommandManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ExplorerBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExplorerBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FileViewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileViewer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +25,14 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="triple &lt;tell.masonm@gmail.com&gt;" />
         <option value="triple" />
       </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -43,19 +47,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/tripl/Desktop/Intellij Source/ExplorerBot/src/main/java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tripl/Desktop/Intellij Source/ExplorerBot/src/main/java&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory",
-      "module"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tripl\Desktop\Intellij Source\ExplorerBot\src\main\java" />
@@ -91,13 +95,43 @@
       <option name="project" value="LOCAL" />
       <updated>1681550849652</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Base Functionality&#10;&#10;Adds fundamental capabilities for JDA webhook connection">
+      <created>1681553141565</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681553141565</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Dev phase 1">
+      <created>1681554043022</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681554043022</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added File Viewer">
+      <created>1681593107427</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681593107427</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added File Viewer">
+      <created>1681593158824</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681593158824</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Project Setup" />
     <MESSAGE value="Base Functionality&#10;&#10;Adds fundamental capabilities for JDA webhook connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Base Functionality&#10;&#10;Adds fundamental capabilities for JDA webhook connection" />
+    <MESSAGE value="Dev phase 1" />
+    <MESSAGE value="Added File Viewer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added File Viewer" />
   </component>
 </project>
