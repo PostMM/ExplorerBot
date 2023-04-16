@@ -3,13 +3,15 @@ import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.User;
 import net.dv8tion.jda.api.entities.channel.concrete.PrivateChannel;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
+import net.dv8tion.jda.api.exceptions.ContextException;
 import net.dv8tion.jda.api.interactions.commands.build.CommandData;
 import net.dv8tion.jda.api.interactions.commands.build.Commands;
 import net.dv8tion.jda.api.utils.FileUpload;
 
-import java.io.File;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class CommandManager {
 
@@ -45,26 +47,27 @@ public class CommandManager {
             sendPrivateMessage(user, explorer.getPath());
         }
         if (content.startsWith("cd") && user != null) {
-            String[] cmd = content.split(" ");
+            String[] cmd = content.split(" ", 2);
             if (cmd.length > 1) {
                 explorer.gotoDir(cmd[1]);
             }
             sendPrivateMessage(user, explorer.getPath());
         }
         if (content.startsWith("sd") && user != null) {
-            String[] cmd = content.split(" ");
+            String[] cmd = content.split(" ", 2);
             if (cmd.length > 1) {
                 explorer.setDir(cmd[1]);
             }
             sendPrivateMessage(user, explorer.getPath());
         }
         if (content.startsWith("get") && user != null) {
-            String[] cmd = content.split(" ");
+            String[] cmd = content.split(" ", 2);
             if (cmd.length > 1) {
                 File requestedFile;
                 if ((requestedFile = explorer.get(cmd[1])) != null) {
                     FileUpload file = FileUpload.fromData(requestedFile);
                     channel.sendFiles(file).queue();
+
                 }
             }
         }
@@ -73,11 +76,18 @@ public class CommandManager {
         }
     }
 
+    public void openPrivateMessage() {
+        if (bot.getUserById(ExplorerBot.CMD_USER_ID) != null) {
+            sendPrivateMessage(Objects.requireNonNull(bot.getUserById(ExplorerBot.CMD_USER_ID)), "<ENTER COMMAND>");
+        }
+    }
     private void sendPrivateMessage(User user, String content) {
         user.openPrivateChannel().queue(channel -> {
             channel.sendMessage(content).queue();
         });
     }
+
+
 
     public List<CommandData> getCommands() {
 

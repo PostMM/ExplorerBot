@@ -1,11 +1,9 @@
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.channel.concrete.PrivateChannel;
-import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel;
 
 import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
@@ -16,10 +14,8 @@ import java.util.stream.Stream;
 
 public class FileViewer {
 
-
     private File dir;
     private String path;
-
     public FileViewer(String path) {
 
         this.path = path;

@@ -16,6 +16,7 @@ public class Quo extends JFrame {
     private static final ImageIcon APP_IMAGE = new ImageIcon(ExplorerBot.RES + "icon.png");
     private final TAOS output;
     private final JTextArea textArea;
+    private CommandManager manager;
 
     public Quo() {
 
@@ -41,6 +42,8 @@ public class Quo extends JFrame {
 
         JMenu fileMenu = new JMenu("File");
         menuBar.add(fileMenu);
+        JMenu setupMenu = new JMenu("Setup");
+        menuBar.add(setupMenu);
         JPanel panel = new JPanel();
         panel.setBackground(COLOR_MAIN);
         this.getContentPane().add(panel, BorderLayout.CENTER);
@@ -88,6 +91,26 @@ public class Quo extends JFrame {
         fileMenu.add(mntmNewMenuItem_1);
         fileMenu.add(mntmNewMenuItem);
 
+        JMenuItem openTerminalItem = new JMenuItem("Open Terminal");
+        openTerminalItem.setBackground(Color.WHITE);
+        openTerminalItem.addActionListener(e -> manager.openPrivateMessage());
+
+        JMenuItem setTokenItem = new JMenuItem("Set Token");
+        setTokenItem.setBackground(Color.WHITE);
+        setTokenItem.addActionListener(e -> {
+
+            String token = (String) JOptionPane.showInputDialog(this, "Enter Token:");
+            String user = (String) JOptionPane.showInputDialog(this, "Enter Privileged User ID:");
+            JOptionPane.showMessageDialog(this, "You must restart the application for changes to take place.");
+            if (token != null && user != null) {
+                Config.setConfig(token, user);
+            }
+
+        });
+        setupMenu.add(openTerminalItem);
+        setupMenu.add(setTokenItem);
+
+
 
         JLabel lb1NewLabel_1 = new JLabel(ExplorerBot.VERSION + " - Triple");
         lb1NewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 9));
@@ -98,6 +121,9 @@ public class Quo extends JFrame {
 
     }
 
+    public void setManager(CommandManager manager) {
+        this.manager = manager;
+    }
     public TAOS getOut() {
         return output;
     }

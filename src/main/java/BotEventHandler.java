@@ -8,7 +8,6 @@ import net.dv8tion.jda.api.events.message.MessageUpdateEvent;
 import net.dv8tion.jda.api.events.session.ReadyEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
-
 public class BotEventHandler extends ListenerAdapter {
 
     private final CommandManager manager;
