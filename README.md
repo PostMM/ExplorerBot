@@ -1,3 +1,7 @@
+# ExplorerBot
+JDA Remote Terminal 
+===================
+
 ExplorerBot Discord Remote Terminal System
 -Triple
 
