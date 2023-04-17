@@ -25,7 +25,10 @@ public class CommandManager {
 
     public void sendHelpMessage(SlashCommandInteractionEvent event) {
 
-        event.reply("")
+        event.reply("If you have setup ExplorerBot on your local system," +
+                        "\nDm the bot and send 'help' to get started." +
+                        "\nOtherwise, download ExplorerBot at https://github.com/PostMM/ExplorerBot," +
+                        "\nAnd follow the instructions in the provided README.")
                 .setEphemeral(true)
                 .queue();
 
@@ -36,31 +39,34 @@ public class CommandManager {
         User user = channel.getUser();
         String content = message.getContentRaw();
 
-        if (content.equals("ls") && user != null) {
+        if (user == null) {
+            return;
+        }
+        if (content.equals("ls")) {
             explorer.getFiles().forEach(fileName -> sendPrivateMessage(user, fileName));
         }
-        if (content.equals("ld") && user != null) {
+        if (content.equals("ld")) {
             explorer.getDirs().forEach(fileName -> sendPrivateMessage(user, fileName));
         }
-        if (content.equals("pd") && user != null) {
+        if (content.equals("pd")) {
             explorer.parentDir();
             sendPrivateMessage(user, explorer.getPath());
         }
-        if (content.startsWith("cd") && user != null) {
+        if (content.startsWith("cd")) {
             String[] cmd = content.split(" ", 2);
             if (cmd.length > 1) {
                 explorer.gotoDir(cmd[1]);
             }
             sendPrivateMessage(user, explorer.getPath());
         }
-        if (content.startsWith("sd") && user != null) {
+        if (content.startsWith("sd")) {
             String[] cmd = content.split(" ", 2);
             if (cmd.length > 1) {
                 explorer.setDir(cmd[1]);
             }
             sendPrivateMessage(user, explorer.getPath());
         }
-        if (content.startsWith("get") && user != null) {
+        if (content.startsWith("get")) {
             String[] cmd = content.split(" ", 2);
             if (cmd.length > 1) {
                 File requestedFile;
@@ -71,8 +77,19 @@ public class CommandManager {
                 }
             }
         }
-        if (content.equals("clear") && user != null) {
+        if (content.equals("clear")) {
             explorer.clearMessages(channel);
+        }
+        if (content.equals("help")) {
+            sendPrivateMessage(user, "Welcome to the ExplorerBot remote terminal." +
+                    "\nUse commands to navigate your file system and download files remotely:" +
+                    "\nclear: clear messages from ExplorerBot" +
+                    "\nld: list directories current directory" +
+                    "\nls: list files in current directory" +
+                    "\ncd: [dir]: change to specified directory" +
+                    "\npd: return to parent directory" +
+                    "\nsd: [path]: jump to specified directory" +
+                    "\nget: [file]: request the specified file (limit 8MB) to download");
         }
     }
 

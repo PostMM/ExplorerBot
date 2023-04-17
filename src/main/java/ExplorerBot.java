@@ -9,7 +9,7 @@ import java.io.PrintStream;
 public class ExplorerBot {
 
     public static final String RES = "src/main/resources";
-    public static final String[] CONFIG = Config.getConfig(RES + "/config.txt");
+    private static final String[] CONFIG = Config.getConfig(RES + "/config.txt");
     private static final String TOKEN = CONFIG[0];
     public static final String VERSION = "V1.0";
     public static final String NAME = "ExplorerBot";

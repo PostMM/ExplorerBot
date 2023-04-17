@@ -67,10 +67,9 @@ public class BotEventHandler extends ListenerAdapter {
     public void onSlashCommandInteraction(SlashCommandInteractionEvent event) {
 
         final String command = event.getName();
-        User user = event.getUser();
 
         if (command.equals("help")) {
-            //TODO
+            manager.sendHelpMessage(event);
         }
 
     }
