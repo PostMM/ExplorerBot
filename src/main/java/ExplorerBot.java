@@ -8,13 +8,14 @@ import java.io.PrintStream;
 
 public class ExplorerBot {
 
-    private static final String TOKEN = "";
+    public static final String RES = "src/main/resources";
+    private static final String[] CONFIG = Config.getConfig(RES + "/config.txt");
+    private static final String TOKEN = CONFIG[0];
     public static final String VERSION = "V1.0";
     public static final String NAME = "ExplorerBot";
-    public static final String RES = "";
+    // public static final String RES = "resources"; TODO set as RES for artifact
     public static final String VIEWER_PATH = "C:\\";
-
-    public static final String CMD_USER_ID = "";
+    public static final String CMD_USER_ID = CONFIG[1];
     private static Quo window;
 
     public static void main(String[] args) {
@@ -45,6 +46,7 @@ public class ExplorerBot {
         FileViewer explorer = new FileViewer(VIEWER_PATH);
         CommandManager manager = new CommandManager(bot, explorer);
         bot.addEventListener(new BotEventHandler(manager));
+        window.setManager(manager);
     }
 
     private static void initGui() {

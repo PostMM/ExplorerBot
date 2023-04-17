@@ -8,7 +8,6 @@ import net.dv8tion.jda.api.events.message.MessageUpdateEvent;
 import net.dv8tion.jda.api.events.session.ReadyEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
-
 public class BotEventHandler extends ListenerAdapter {
 
     private final CommandManager manager;
@@ -68,10 +67,9 @@ public class BotEventHandler extends ListenerAdapter {
     public void onSlashCommandInteraction(SlashCommandInteractionEvent event) {
 
         final String command = event.getName();
-        User user = event.getUser();
 
         if (command.equals("help")) {
-            //TODO
+            manager.sendHelpMessage(event);
         }
 
     }

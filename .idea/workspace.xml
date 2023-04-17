@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="692bd5ec-d939-4008-9e07-bdbbd2e0fb4a" name="Changes" comment="">
+    <list default="true" id="692bd5ec-d939-4008-9e07-bdbbd2e0fb4a" name="Changes" comment="Added Configuration for Token">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BotEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BotEventHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CommandManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ExplorerBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExplorerBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FileViewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileViewer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +31,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="development" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,7 +51,10 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/tripl/Desktop/Intellij Source/ExplorerBot/src/main/java&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tripl/Desktop/Intellij Source/ExplorerBot/src/main/java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3137931&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;ChangesTree.GroupingKeys&quot;: [
@@ -123,7 +126,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681593158824</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Stable Build 1.0">
+      <created>1681599669901</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681599669901</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added Configuration for Token">
+      <created>1681608593085</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681608593085</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -132,6 +149,8 @@
     <MESSAGE value="Base Functionality&#10;&#10;Adds fundamental capabilities for JDA webhook connection" />
     <MESSAGE value="Dev phase 1" />
     <MESSAGE value="Added File Viewer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added File Viewer" />
+    <MESSAGE value="Stable Build 1.0" />
+    <MESSAGE value="Added Configuration for Token" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Configuration for Token" />
   </component>
 </project>
